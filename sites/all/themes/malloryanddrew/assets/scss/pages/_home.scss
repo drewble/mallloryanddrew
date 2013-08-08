@@ -1,0 +1,35 @@
+// Styles for the home page
+.home {
+
+}
+
+#main-content	{
+	font-size: 46pt;
+	margin-top: 25%;
+
+	.names {
+		display: block;
+		letter-spacing: 10px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+.icon-moon-light {
+	background: url(../images/moon-light.png) no-repeat;
+	display: block;
+	float: left;
+	margin-bottom: -62%;
+	margin-left: 21%;
+	margin-top: 5%;
+	min-height: 609px;
+	min-width: 627px;
+}
+
+#wedding-date {
+	font-size: .5em;
+	letter-spacing: 5px;
+	margin-left: 41%;
+	position: relative;
+	top: 120px;
+}

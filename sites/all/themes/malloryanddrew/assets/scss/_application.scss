@@ -1,0 +1,104 @@
+/*
+ * PLEASE, PLEASE, PLEASE...
+ * Organize your CSS. Do not simply throw your CSS at the end
+ * of this file. Read the table of contents and _use_ it.
+ */
+
+/*
+ * TABLE OF CONTENTS
+ * ---------------------------------------------------------------------------
+ * 1. Globals  - Default HTML element styling.
+ * 2. Template - Styling for the structure of the site.
+ * ---------------------------------------------------------------------------
+ */
+
+/* Things to place in separate files...
+ * ---------------------------------------------------------------------------
+ * _variables.scss - Sass variables.
+ * _mixins.scss    - Sass mixins.
+ * _library.scss   - Styling for custom classes used throughout the site.
+ * _page_name.scss - Styling for page/state specific elements. Name the
+ *                   file appropriately.
+ * ---------------------------------------------------------------------------
+ */
+
+
+/* GLOBALS
+ * -----------------------------------------------------------------------------
+ * Styling for default HTML elements.
+ * -----------------------------------------------------------------------------*/
+body {
+  background: $navy url(../images/bg.png) top left no-repeat; 
+  background-size: cover;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: antialiased;
+
+  @include media($tablet) {
+    font-size: $base-font-size-tablet;
+  }
+}
+
+a, a:visited {}
+a:hover, a:active {}
+
+blockquote {}
+small {}
+
+h1 {}
+h2 {}
+h3 {}
+
+dl {
+  margin-bottom: $base-line-height;
+}
+
+dt,
+dd {
+  line-height: $base-line-height;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: $base-line-height / 2;
+}
+
+.dl-horizontal {
+  dt {
+    clear: left;
+    float: left;
+    text-align: right;
+    width: 120px;
+    @include text-overflow();
+  }
+
+  dd {
+    margin-left: 130px;
+  }
+}
+
+
+
+/* TEMPLATE
+ * -----------------------------------------------------------------------------
+ * Styling for the structure of the site.
+ * -----------------------------------------------------------------------------*/
+.header-primary {}
+
+.nav-primary {}
+
+.content-primary {}
+
+.footer-primary {}
+
+.page {
+  background: none;
+  border: none;
+  color: $off-white;
+  font-family: $base-font-family; 
+  letter-spacing: 2px;
+}
