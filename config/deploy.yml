@@ -1,0 +1,5 @@
+production:
+  domain: "dmblake"
+  deploy_to: "/home8/dmblakec/www/malloryanddrew"
+  repository: "git@github.com:drewble/mallloryanddrew.git"
+  branch: "master" 

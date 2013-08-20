@@ -133,6 +133,7 @@ body {
   background-size: cover;
   font-family: "champagne__limousinesregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
+  font-weight: 600;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased; }
   @media screen and (min-width: 700px) {
@@ -167,24 +168,91 @@ dd {
  * -----------------------------------------------------------------------------
  * Styling for the structure of the site.
  * -----------------------------------------------------------------------------*/
+.header-primary {
+  *zoom: 1;
+  max-width: 62.5em;
+  margin-left: auto;
+  margin-right: auto; }
+  .header-primary:before, .header-primary:after {
+    content: " ";
+    display: table; }
+  .header-primary:after {
+    clear: both; }
+  .header-primary nav ul {
+    padding: 0; }
+  .header-primary nav li {
+    display: inline-block;
+    font-size: .9em;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    min-width: 18%;
+    text-align: center;
+    text-transform: uppercase; }
+    .header-primary nav li.first {
+      min-width: 50px; }
+    .header-primary nav li a {
+      color: white;
+      text-decoration: none; }
+    .header-primary nav li a.active {
+      color: #ef8375; }
+
+.content-primary > h1 {
+  text-transform: uppercase; }
+
+.footer-primary {
+  background: url(../images/moon-footer.png) 50% 0 no-repeat;
+  min-height: 300px; }
+
+#main-content {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #main-content:last-child {
+    margin-right: 0; }
+
 .page {
+  *zoom: 1;
+  max-width: 62.5em;
+  margin-left: auto;
+  margin-right: auto;
   background: none;
   border: none;
   color: #cccccc;
   font-family: "champagne__limousinesregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 2px; }
+  .page:before, .page:after {
+    content: " ";
+    display: table; }
+  .page:after {
+    clear: both; }
 
-#main-content {
+.home {
+  *zoom: 1;
+  max-width: 62.5em;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../images/moon-light.png) 50% 0% no-repeat;
+  min-height: 609px;
+  padding-top: 220px; }
+  .home:before, .home:after {
+    content: " ";
+    display: table; }
+  .home:after {
+    clear: both; }
+
+#main-content .names {
+  display: block;
+  letter-spacing: 10px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.names,
+#wedding-date {
   font-size: 46pt;
-  margin-top: 25%; }
-  #main-content .names {
-    display: block;
-    letter-spacing: 10px;
-    text-align: center;
-    text-transform: uppercase; }
+  font-weight: 400; }
 
 .icon-moon-light {
-  background: url(../images/moon-light.png) no-repeat;
   display: block;
   float: left;
   margin-bottom: -62%;
@@ -194,8 +262,9 @@ dd {
   min-width: 627px; }
 
 #wedding-date {
-  font-size: .5em;
+  display: block;
+  font-size: 1em;
   letter-spacing: 5px;
-  margin-left: 41%;
   position: relative;
-  top: 120px; }
+  text-align: center;
+  top: 145px; }

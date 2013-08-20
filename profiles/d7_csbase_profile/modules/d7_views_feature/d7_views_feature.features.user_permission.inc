@@ -10,7 +10,7 @@
 function d7_views_feature_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access all views.
+  // Exported permission: 'access all views'.
   $permissions['access all views'] = array(
     'name' => 'access all views',
     'roles' => array(
@@ -19,7 +19,7 @@ function d7_views_feature_user_default_permissions() {
     'module' => 'views',
   );
 
-  // Exported permission: administer views.
+  // Exported permission: 'administer views'.
   $permissions['administer views'] = array(
     'name' => 'administer views',
     'roles' => array(

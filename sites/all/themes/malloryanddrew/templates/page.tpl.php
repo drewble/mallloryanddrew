@@ -13,7 +13,7 @@
 <header role="banner">
 
   <?php if($page['header']): ?>
-    <div class="header-region">
+    <div class="header-primary">
       <?php print render($page['header']); ?>
     </div>
   <?php endif; ?>
@@ -22,22 +22,22 @@
 
 <div class="page">
 
-  <div role="main" id="main-content">
+  <div role="main" class="content-primary" id="main-content">
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
       <h1><?php print $title; ?></h1>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
 
-    <?php print $breadcrumb; ?>
-
     <?php if ($action_links): ?>
       <ul class="action-links"><?php print render($action_links); ?></ul>
     <?php endif; ?>
 
     <?php if (isset($tabs['#primary'][0]) || isset($tabs['#secondary'][0])): ?>
-      <nav class="tabs"><?php print render($tabs); ?></nav>
+      <nav class="tabs nav-primary"><?php print render($tabs); ?></nav>
     <?php endif; ?>
+
+    <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Main menu'))); ?>
 
     <?php if($page['highlighted'] OR $messages){ ?>
       <div class="drupal-messages">
@@ -68,7 +68,7 @@
   <?php endif; ?>
 </div><!-- /page-->
 
-<footer role="contentinfo">
+<footer class="footer-primary" role="contentinfo">
   <?php print render($page['footer']); ?>
 </footer>
 

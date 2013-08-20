@@ -46,6 +46,7 @@ function d7_photos_image_default_styles() {
         'weight' => 1,
       ),
     ),
+    'label' => '200x200',
   );
 
   return $styles;

@@ -119,6 +119,9 @@ function d7_photos_views_default_views() {
     'default' => 'default',
     'page' => 'page',
   );
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
   $export['photos'] = $view;
 
   return $export;

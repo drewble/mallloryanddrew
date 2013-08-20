@@ -1,11 +1,12 @@
 // Styles for the home page
 .home {
-
+	@include outer-container;
+	background: url(../images/moon-light.png) 50% 0% no-repeat;
+	min-height: 609px;
+	padding-top: 220px;
 }
 
 #main-content	{
-	font-size: 46pt;
-	margin-top: 25%;
 
 	.names {
 		display: block;
@@ -15,8 +16,14 @@
 	}
 }
 
+.names,
+#wedding-date {
+	font-size: 46pt;
+	font-weight: 400;
+}
+
 .icon-moon-light {
-	background: url(../images/moon-light.png) no-repeat;
+	
 	display: block;
 	float: left;
 	margin-bottom: -62%;
@@ -27,9 +34,10 @@
 }
 
 #wedding-date {
-	font-size: .5em;
+	display: block;
+	font-size: 1em;
 	letter-spacing: 5px;
-	margin-left: 41%;
 	position: relative;
-	top: 120px;
+	text-align: center;
+	top: 145px;
 }

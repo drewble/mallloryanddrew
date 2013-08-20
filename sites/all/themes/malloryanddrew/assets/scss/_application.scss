@@ -32,6 +32,7 @@ body {
   background-size: cover;
   font-family: $base-font-family;
   font-size: $base-font-size;
+  font-weight: 600;
   line-height: $base-line-height;
   -webkit-font-smoothing: antialiased;
 
@@ -87,15 +88,59 @@ dd {
  * -----------------------------------------------------------------------------
  * Styling for the structure of the site.
  * -----------------------------------------------------------------------------*/
-.header-primary {}
+.header-primary {
+  @include outer-container;
 
-.nav-primary {}
+  nav ul {
+    padding: 0;
+  }
 
-.content-primary {}
+  nav li {
+    display: inline-block;
+    font-size: .9em;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    min-width: 18%;
+    text-align: center;
+    text-transform: uppercase;
 
-.footer-primary {}
+    &.first {
+      min-width: 50px;
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+
+    a.active {
+      color: $peach;
+    }
+  }
+}
+
+.nav-primary {
+
+}
+
+.content-primary {
+
+  > h1 {
+    text-transform: uppercase;
+  }
+}
+
+.footer-primary {
+  background: url(../images/moon-footer.png) 50% 0 no-repeat;
+  min-height: 300px;
+}
+
+#main-content {
+  @include span-columns(12);
+}
 
 .page {
+  @include outer-container;
   background: none;
   border: none;
   color: $off-white;

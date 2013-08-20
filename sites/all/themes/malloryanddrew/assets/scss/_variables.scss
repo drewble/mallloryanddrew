@@ -9,7 +9,7 @@ $base-value-tablet: 16;
 
 //**** Neat Grid ****
 // Uncomment these if you need additional configuration
-$max-width: em(1088, $base-value); // Max-width of the outer container
+$max-width: em(750, $base-value); // Max-width of the outer container
 // $default-feature: min-width;    // Default @media feature for the breakpoint() mixin
 // $column: golden-ratio(1em, 3);  // Column width
 // $gutter: golden-ratio(1em, 1);  // Gutter between each two columns
@@ -65,3 +65,4 @@ $yellow:                #fe9800;
 $orange:                #f89406;
 $pink:                  #c3325f;
 $purple:                #7a43b6;
+$peach:									#ef8375;

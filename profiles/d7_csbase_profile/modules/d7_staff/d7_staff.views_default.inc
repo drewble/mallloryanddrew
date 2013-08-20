@@ -22,7 +22,7 @@ function d7_staff_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Staff';
+  $handler->display->display_options['title'] = 'Wedding Party.';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -108,7 +108,7 @@ function d7_staff_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['path'] = 'staff';
+  $handler->display->display_options['path'] = 'wedding-party';
 
   /* Display: Featured Staff */
   $handler = $view->new_display('block', 'Featured Staff', 'block');

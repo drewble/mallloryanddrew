@@ -10,7 +10,7 @@
 function d7_base_wysiwyg_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access ckeditor link.
+  // Exported permission: 'access ckeditor link'.
   $permissions['access ckeditor link'] = array(
     'name' => 'access ckeditor link',
     'roles' => array(
@@ -20,7 +20,7 @@ function d7_base_wysiwyg_user_default_permissions() {
     'module' => 'ckeditor_link',
   );
 
-  // Exported permission: administer ckeditor link.
+  // Exported permission: 'administer ckeditor link'.
   $permissions['administer ckeditor link'] = array(
     'name' => 'administer ckeditor link',
     'roles' => array(

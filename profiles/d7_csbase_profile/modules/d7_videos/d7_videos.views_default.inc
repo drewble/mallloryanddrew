@@ -142,6 +142,9 @@ function d7_videos_views_default_views() {
   $handler->display->display_options['bundles'] = array(
     0 => 'video',
   );
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
   $export['videos'] = $view;
 
   return $export;

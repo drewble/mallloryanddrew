@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Mallory and Drew Base feature.
+ */
+
+include_once 'mallory_and_drew_base.features.inc';

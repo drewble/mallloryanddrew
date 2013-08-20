@@ -13,14 +13,14 @@
 <header role="banner">
 
   <?php if($page['header']): ?>
-    <div class="header-region">
+    <div class="header-primary">
       <?php print render($page['header']); ?>
     </div>
   <?php endif; ?>
 
 </header>
 
-<div class="page">
+<div class="page home">
 
   <span class="icon-moon-light"></span>
 
@@ -33,7 +33,4 @@
  
 </div><!-- /page-->
 
-<footer role="contentinfo">
-  <?php print render($page['footer']); ?>
-</footer>
 
