@@ -129,8 +129,7 @@
  * Styling for default HTML elements.
  * -----------------------------------------------------------------------------*/
 body {
-  background: #011429 url(../images/bg.png) top left no-repeat;
-  background-size: cover;
+  background: #011429 url(../images/bg.png) top left;
   font-family: "champagne__limousinesregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 600;
@@ -172,12 +171,16 @@ dd {
   *zoom: 1;
   max-width: 62.5em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-left: 5%; }
   .header-primary:before, .header-primary:after {
     content: " ";
     display: table; }
   .header-primary:after {
     clear: both; }
+  @media screen and (max-width: 768px) {
+    .header-primary {
+      display: none; } }
   .header-primary nav ul {
     padding: 0; }
   .header-primary nav li {
@@ -185,9 +188,12 @@ dd {
     font-size: .9em;
     letter-spacing: 2px;
     margin-top: 10px;
-    min-width: 18%;
+    min-width: 17%;
     text-align: center;
     text-transform: uppercase; }
+    @media screen and (min-width: 850px) {
+      .header-primary nav li {
+        min-width: 18%; } }
     .header-primary nav li.first {
       min-width: 50px; }
     .header-primary nav li a {
@@ -195,6 +201,39 @@ dd {
       text-decoration: none; }
     .header-primary nav li a.active {
       color: #ef8375; }
+
+.header-mobile {
+  background: #011429;
+  display: none;
+  min-height: 60px;
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .header-mobile {
+      display: block; } }
+  .header-mobile .mobile-trigger {
+    background: url(../images/menu.png) top left no-repeat;
+    display: block;
+    margin-left: 5%;
+    min-height: 30px;
+    min-width: 30px;
+    position: relative;
+    top: 15px; }
+
+#jPanelMenu-menu {
+  box-shadow: inset 0px 2px 5px 5px rgba(0, 0, 0, 0.5); }
+  #jPanelMenu-menu li a {
+    color: #fff; }
+
+#jPanelMenu-menu ul {
+  margin-left: 0px;
+  padding-left: 0px; }
+
+#jPanelMenu-menu li {
+  border-bottom: 1px solid #555;
+  margin-bottom: 8px;
+  margin-left: 0px;
+  padding-bottom: 8px;
+  padding-left: 5%; }
 
 .content-primary > h1 {
   text-transform: uppercase; }
@@ -220,46 +259,73 @@ dd {
   border: none;
   color: #cccccc;
   font-family: "champagne__limousinesregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  padding: 0 5%; }
   .page:before, .page:after {
     content: " ";
     display: table; }
   .page:after {
     clear: both; }
+  .page.home {
+    padding: 0%;
+    padding-top: 200px; }
 
 .home {
   *zoom: 1;
   max-width: 62.5em;
   margin-left: auto;
   margin-right: auto;
-  background: url(../images/moon-light.png) 50% 0% no-repeat;
-  min-height: 609px;
-  padding-top: 220px; }
+  min-height: 609px; }
   .home:before, .home:after {
     content: " ";
     display: table; }
   .home:after {
     clear: both; }
 
-#main-content .names {
-  display: block;
-  letter-spacing: 10px;
-  text-align: center;
-  text-transform: uppercase; }
+#main-content {
+  min-height: 168px; }
+  #main-content .names {
+    display: block;
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase; }
 
 .names,
 #wedding-date {
-  font-size: 46pt;
+  font-size: 18pt;
   font-weight: 400; }
+  @media screen and (min-width: 1120px) {
+    .names,
+    #wedding-date {
+      font-size: 46pt; } }
+  @media screen and (min-width: 850px) {
+    .names,
+    #wedding-date {
+      font-size: 36pt; } }
+  @media screen and (min-width: 700px) and (max-width: 849px) {
+    .names,
+    #wedding-date {
+      font-size: 26pt; } }
 
 .icon-moon-light {
   display: block;
-  float: left;
   margin-bottom: -62%;
-  margin-left: 21%;
-  margin-top: 5%;
-  min-height: 609px;
-  min-width: 627px; }
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 338px;
+  position: relative;
+  top: -263px; }
+  @media screen and (min-width: 1120px) {
+    .icon-moon-light {
+      top: -425px; } }
+  @media screen and (min-width: 850px) {
+    .icon-moon-light {
+      max-width: 676px;
+      top: -395px; } }
+  @media screen and (min-width: 700px) and (max-width: 849px) {
+    .icon-moon-light {
+      max-width: 550px;
+      top: -370px; } }
 
 #wedding-date {
   display: block;

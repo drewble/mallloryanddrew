@@ -28,8 +28,7 @@
  * Styling for default HTML elements.
  * -----------------------------------------------------------------------------*/
 body {
-  background: $navy url(../images/bg.png) top left no-repeat; 
-  background-size: cover;
+  background: $navy url(../images/bg.png) top left; 
   font-family: $base-font-family;
   font-size: $base-font-size;
   font-weight: 600;
@@ -90,6 +89,11 @@ dd {
  * -----------------------------------------------------------------------------*/
 .header-primary {
   @include outer-container;
+  padding-left: 5%;
+
+  @include media($small) {
+    display: none;
+  }
 
   nav ul {
     padding: 0;
@@ -100,9 +104,13 @@ dd {
     font-size: .9em;
     letter-spacing: 2px;
     margin-top: 10px;
-    min-width: 18%;
+    min-width: 17%;
     text-align: center;
     text-transform: uppercase;
+
+    @include media($desktop) {
+      min-width: 18%;
+    }
 
     &.first {
       min-width: 50px;
@@ -117,6 +125,49 @@ dd {
       color: $peach;
     }
   }
+}
+
+.header-mobile {
+  background: $navy;
+  display: none;
+  min-height: 60px;
+  width: 100%;
+
+  @include media($small) {
+    display: block;
+  }
+
+  .mobile-trigger{
+    background: url(../images/menu.png) top left no-repeat;
+    display: block;
+    margin-left: 5%;
+    min-height: 30px;
+    min-width: 30px;
+    position: relative;
+    top: 15px;
+  }
+}
+
+#jPanelMenu-menu {
+
+  box-shadow: inset 0px 2px 5px 5px rgba(0, 0, 0, 0.5);
+
+  li a {
+    color: #fff;
+  }
+}
+
+#jPanelMenu-menu ul {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#jPanelMenu-menu li {
+  border-bottom: 1px solid #555;
+  margin-bottom: 8px;
+  margin-left: 0px;
+  padding-bottom: 8px;
+  padding-left: 5%;
 }
 
 .nav-primary {
@@ -146,4 +197,10 @@ dd {
   color: $off-white;
   font-family: $base-font-family; 
   letter-spacing: 2px;
+  padding: 0 5%;
+
+  &.home {
+    padding: 0%;
+    padding-top: 200px;
+  }
 }

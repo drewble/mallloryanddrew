@@ -24,7 +24,9 @@ $max-width: em(750, $base-value); // Max-width of the outer container
 
 
 //**** Breakpoints (mobile first) ****
+$widescreen:  min-width 1120px;
 $desktop:     min-width 850px;
+$small:				max-width 768px;
 $tablet:      min-width 700px;
 $tablet-only: min-width 700px max-width 849px;
 $mobile-only: max-width 699px; // Avoid using this

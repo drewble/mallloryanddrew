@@ -1,0 +1,1 @@
+(function(e){var t=e.jPanelMenu({menu:".block-system-main-menu",trigger:".mobile-trigger",duration:0}),n=jRespond([{label:"handheld",enter:0,exit:768}]);n.addFunc({breakpoint:"handheld",enter:function(){t.on()},exit:function(){t.off()}})})(jQuery);

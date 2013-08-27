@@ -1,13 +1,13 @@
 // Styles for the home page
 .home {
 	@include outer-container;
-	background: url(../images/moon-light.png) 50% 0% no-repeat;
 	min-height: 609px;
-	padding-top: 220px;
 }
 
 #main-content	{
 
+	min-height: 168px;
+	
 	.names {
 		display: block;
 		letter-spacing: 10px;
@@ -18,19 +18,44 @@
 
 .names,
 #wedding-date {
-	font-size: 46pt;
+	font-size: 18pt;
 	font-weight: 400;
+
+	@include media($widescreen) {
+		font-size: 46pt;
+	}
+
+	@include media ($desktop) {
+		font-size: 36pt;
+	}
+
+	@include media ($tablet-only) {
+		font-size: 26pt;
+	}
 }
 
 .icon-moon-light {
-	
 	display: block;
-	float: left;
 	margin-bottom: -62%;
-	margin-left: 21%;
-	margin-top: 5%;
-	min-height: 609px;
-	min-width: 627px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 338px;
+	position: relative;
+	top: -263px;
+
+	@include media($widescreen) {
+		top: -425px;
+	}
+
+	@include media ($desktop) {
+		max-width: 676px;
+		top: -395px;
+	}
+
+	@include media ($tablet-only) {
+		max-width: 550px;
+		top: -370px;
+	}
 }
 
 #wedding-date {

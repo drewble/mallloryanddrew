@@ -13,6 +13,9 @@
 <header role="banner">
 
   <?php if($page['header']): ?>
+    <div class="header-mobile">
+      <a class="mobile-trigger"></a>
+    </div>
     <div class="header-primary">
       <?php print render($page['header']); ?>
     </div>
