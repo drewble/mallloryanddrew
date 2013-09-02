@@ -139,6 +139,12 @@ body {
     body {
       font-size: 16px; } }
 
+a, a:visited {
+  color: #ef8375; }
+
+a:hover, a:active {
+  color: #ef8375; }
+
 dl {
   margin-bottom: 1.5; }
 
