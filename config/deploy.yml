@@ -1,5 +1,5 @@
 production:
-  domain: "dmblake"
+  domain: "dmblake -p 443"
   deploy_to: "/home8/dmblakec/www/malloryanddrew"
   repository: "git@github.com:drewble/mallloryanddrew.git"
   branch: "master" 
