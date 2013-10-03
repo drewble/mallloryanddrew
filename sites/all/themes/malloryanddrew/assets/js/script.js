@@ -7,6 +7,10 @@
     duration: 0
 	});
 
+    $('.mobile-trigger').click(function(){
+        console.log('trigger');
+    })
+
 	var jRes = jRespond([
     {
         label: 'handheld',
